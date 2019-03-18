@@ -82,12 +82,14 @@
                         TextColor="White"
                         Command="{Binding LoginCommand}"
                         HorizontalOptions="FillAndExpand"
+                        IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                         BackgroundColor="Navy">
                     </Button>
                     <Button
                         Text="Registrarse"
                         TextColor="White"
                         HorizontalOptions="FillAndExpand"
+                        IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                         BackgroundColor="Purple">
                     </Button>
                 </StackLayout>
