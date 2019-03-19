@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Mundo.ViewModels
+namespace Mundo.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class PaisPage : ContentPage
+	public partial class PaisInfoPage : ContentPage
 	{
-		public PaisPage ()
+		public PaisInfoPage ()
 		{
 			InitializeComponent ();
 		}
