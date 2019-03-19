@@ -13,6 +13,11 @@
             get;
             set;
         }
+        public PaisViewModel Pais
+        {
+            get;
+            set;
+        }
         #endregion
 
         #region Constructores

@@ -7,6 +7,12 @@
     <ContentPage.Content>
         <StackLayout
             BindingContext="{Binding Paises}">
+            <SearchBar
+                Placeholder="Buscar.."
+                Text="{Binding Filter, Mode=TwoWay}"
+                SearchCommand="{Binding SearchCommand}">
+                
+            </SearchBar>
             <ListView 
                 BackgroundColor="Silver"
                 HasUnevenRows="true" 
@@ -20,6 +26,10 @@
                         <ViewCell>
                             <Frame
                                 Margin="1">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding SelectLandCommand}"/>
+                                </Frame.GestureRecognizers>
+                                
                                 <Grid>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"/>
